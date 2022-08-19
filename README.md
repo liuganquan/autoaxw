@@ -4,5 +4,5 @@
 # 如何使用？
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/LoliStudio/autoaxw/main/autoaxw.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/liuganquan/autoaxw/main/autoaxw.sh)
 ```
