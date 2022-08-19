@@ -203,7 +203,7 @@ ConnetionConfig:
   BufferSize: 64
 Nodes:
   -
-    PanelType: "sspanel"
+    PanelType: "SSpanel"
     ApiConfig:
       ApiHost: "${v2bHost}"
       ApiKey: "${v2bAPI}"
