@@ -10,8 +10,8 @@ options() {
   ${red}变量文件保存在 /etc/autoaxw/options.conf ${plain}
 ————————————————
     "
-    read -p "输入 v2board 面板 API 链接: " v2bhosts
-    read -p "输入 v2board 面板密钥: " v2btoken
+    read -p "输入 sspanel 面板 API 链接: " v2bhosts
+    read -p "输入 sspanel 面板密钥: " v2btoken
     read -p "节点根域名: " nodedomain
     read -p "输入 Cloudflare Email: " cfemail
     read -p "输入 Cloudflare APIKey: " cfkey
@@ -29,7 +29,7 @@ rdomain="${nodedomain}"
 v2bHost="${v2bhosts}"
 v2bAPI="${v2btoken}"
 EOF
-  curl -o /usr/bin/autoaxw -Ls https://raw.githubusercontent.com/LoliStudio/autoaxw/main/autoaxw.sh
+  curl -o /usr/bin/autoaxw -Ls https://raw.githubusercontent.com/liuganquan/autoaxw/main/autoaxw.sh
   chmod +x /usr/bin/autoaxw
   fi
   . /etc/autoaxw/options.conf
@@ -203,7 +203,7 @@ ConnetionConfig:
   BufferSize: 64
 Nodes:
   -
-    PanelType: "V2board"
+    PanelType: "sspanel"
     ApiConfig:
       ApiHost: "${v2bHost}"
       ApiKey: "${v2bAPI}"
@@ -296,7 +296,7 @@ au_conf() {
     "access": "/etc/au/au.log"
   },
   "panel": {
-    "type": "v2board",
+    "type": "sspanel",
     "url": "${v2bHost}",
     "key": "${v2bAPI}",
     "node_ids": [${nodeid}],
