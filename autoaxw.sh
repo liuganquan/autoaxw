@@ -215,7 +215,6 @@ Nodes:
       SpeedLimit: 0
       DeviceLimit: 0
       RuleListPath:
-      DisableCustomConfig: true
     ControllerConfig:
       ListenIP: ${xrayr_listen}
       UpdatePeriodic: 60
